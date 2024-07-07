@@ -3,53 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Profile Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="your-image.png" alt="Alex Tian" class="profile-img">
-        <h1>Alex Tian</h1>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#research">Research</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Alex Tian, an electrical engineer who is currently completing a Master of Applied Science degree at the University of Victoria. I am passionate about Artificial Intelligence, Robotics, Embedded Systems, and the Internet of Things.</p>
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><b>Programming Languages</b>: C, C++, Python, HTML, CSS</li>
-            <li><b>Artificial Intelligence</b>: Machine Learning, Neural Networks</li>
-            <li><b>Robotics</b>: Robot Operating System (ROS), Sensors, Actuators</li>
-            <li><b>Embedded Systems</b>: Microcontrollers, RTOS, Circuit Design</li>
-            <li><b>Internet of Things (IoT)</b>: IoT Protocols, Device Integration, Cloud Services</li>
-        </ul>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Demo Section 1.</p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Demo Section 2.</p>
-        </div>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: yunfeitian@uvic.ca</p>
-    </section>
-    <footer>
-        <p>&copy; 2024 Alex Tian</p>
-    </footer>
+    <main>
+        <section id="home">
+            <div class="container">
+                <div class="image">
+                    <img src="image.png" alt="Kevin">
+                </div>
+                <div class="content">
+                    <p>Machine Learning Engineer</p>
+                    <h1>Hi, I'm <span>Alex Tian</span></h1>
+                    <h2>Master of Applied Science from University of Victoria</h2>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Details about Kevin's background, education, and interests.</p>
+        </section>
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>UI/UX Design</li>
+                <li>Front-End Development</li>
+                <li>Graphic Design</li>
+                <li>Prototyping</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li>Project One</li>
+                <li>Project Two</li>
+                <li>Project Three</li>
+            </ul>
+        </section>
+
+        <section id="research" class="section">
+            <h2>Research</h2>
+            <p>Details about research projects and publications.</p>
+        </section>
+        
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>How to get in touch with Kevin.</p>
+        </section>
+    </main>
 </body>
 </html>
