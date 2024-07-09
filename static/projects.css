@@ -1,0 +1,115 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*--------------------------------------Nav Bar Section ------------------------------------------*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+    padding: 1rem 2rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------- Header Section -------------------------------------------*/
+.masthead {
+    position: relative;
+    height: 95vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.masthead .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire header */
+    z-index: -1; /* Ensure the image stays in the background */
+}
+
+.masthead h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.masthead p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0 0;
+}
+
+
+/* ----------------------------------------------------Main Content Section-------------------------------------------------- */
+
+.page-section {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto; /* This centers the .page-section itself horizontally within its parent */
+}
+.page-container p{
+    margin-bottom: 2%;
+    font-size: 1.1em;
+    text-indent:5%;
+}
+
+.project_image{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+}
+
+.project_container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+    background: grey;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 7px;
+    align-items: center;
+}
+
+.project_container .proj_title {
+    font-size: 1.1em;
+
+}
+
+.project_container .proj_summary {
+    font-size: 0.9em;
+    text-indent: 5%;
+}

@@ -121,33 +121,6 @@ nav {
     border-radius: 5px;
 }
 
-.project_image{
-    height: 250px;
-    width: 250px;
-}
-
-.project_container {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    max-width: 1200px;
-    gap: 10px;
-
-    background: #222;
-    margin: 15px 0;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.project_container .proj_title {
-    font-size: 1.1em;
-
-}
-
-.project_container .proj_summary {
-    font-size: 0.9em;
-    text-indent: 5%;
-}
-
 footer {
     width: 100%;
     padding: 20px 0;
