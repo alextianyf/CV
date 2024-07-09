@@ -42,6 +42,20 @@ nav {
     color: #ff004f;
 }
 
+.render_anchor{
+    color: #969696;
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    font-style: italic;
+    font-size: 20px; /* Font size */
+}
+
+.render_anchor:hover {
+    color: red; /* Change text color on hover */
+    text-decoration: underline; /* Add underline on hover */
+  }
+
+
 .home_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
