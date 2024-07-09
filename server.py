@@ -3,9 +3,10 @@ import datetime
 
 app = Flask(__name__)
 
+current_year = datetime.datetime.now().year
+
 @app.route("/")
 def home():
-    current_year = datetime.datetime.now().year
     return render_template("index.html", year = current_year)
 
 @app.route("/aboutme")
@@ -14,7 +15,7 @@ def get_aboutme():
 
 @app.route("/projects")
 def get_projects():
-    return render_template("projects.html")
+    return render_template("projects.html", year = current_year)
 
 if __name__ == "__main__":
     app.run(debug=True)

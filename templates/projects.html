@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Alex Tian's Website</title>
     <link rel="stylesheet" href="../static/projects.css">
+    <link rel="stylesheet" href="../static/footer.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -81,6 +82,16 @@
     </section>
 </body>
 
-{% include "footer.html" %}
+<footer> 
+    <div class="footer_icon_section">
+        <a href="https://github.com/alextianyf">
+            <img class="footer_icon" src="static/images/github.png" alt="GitHub">
+        </a>
+        <a href="https://linkedin.com/in/yunfei-alex-tian-2b9317195">
+            <img class="footer_icon" src="static/images/linkedin.png" alt="LinkedIn">
+        </a>
+    </div>      
+    <p>Copyright &copy; {{year}} | Build by Alex Tian </p> 
+</footer>
 
 </html>
