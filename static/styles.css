@@ -94,6 +94,29 @@ nav {
     text-indent: 5%;
 }
 
+#projects h2{
+    margin-bottom: 5%;
+}
+
+.centered-image {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 10px;
+}
+
+.carousel-indicators li {
+    background-color: transparent;
+    border: 1px solid white;
+    width: 20px;
+    height: 0.1px;
+  }
+
+
 .section {
     max-width: 1200px;
     margin: 50px auto;
