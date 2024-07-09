@@ -13,7 +13,7 @@ header {
     width: 100%;
     padding: 20px 0;
     background-color: gray;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 10;
 }
@@ -48,6 +48,8 @@ nav {
     font-weight: bold; /* Bold text */
     font-style: italic;
     font-size: 20px; /* Font size */
+    margin-top: 5%;
+    display: block; /* Ensures the margin applies correctly */
 }
 
 .render_anchor:hover {
@@ -103,6 +105,10 @@ nav {
     margin-right: auto;
 }
 
+.carousel-inner img {
+    border-radius: 15px;
+}
+
 .carousel-caption {
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     color: white;
@@ -142,28 +148,6 @@ nav {
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
-}
-
-footer {
-    width: 100%;
-    padding: 20px 0;
-    background-color: gray;
-    text-align: center;
-}
-
-.footer_icon_section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 50px;
-    max-width: 150px;
-    margin: 50px auto;
-    padding: 0 20px;
-}
-
-.footer_icon{
-    height: 32px;
-    width: 32px;
 }
 
 
