@@ -102,7 +102,6 @@
                     <span class="carousel-control-next-icon"></span>
                 </button>
 
-
             </div>
 
             <a class="render_anchor" href="{{ url_for('get_projects')}}">More Projects</a>
@@ -111,7 +110,7 @@
         <section id="contact" class="section">
             <div class="container mt-3">
                 <h2>Contact Me</h2>
-                <form action="/action_page.php">
+                <form action="/contact" method="POST">
                     <div class="mb-3 mt-3">
                         <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
                     </div>
