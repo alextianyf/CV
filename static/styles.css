@@ -1,7 +1,10 @@
 body {
     background-color: black;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif, Arial;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,37 +12,41 @@ body {
     align-items: center;
 }
 
-header {
-    width: 100%;
-    padding: 20px 0;
-    background-color: gray;
-    /* position: sticky; */
-    top: 0;
-    z-index: 10;
-}
+/* ----------------navbar --------------- */
 
-nav {
+.navbar {
     display: flex;
-    justify-content: flex-end;
-    margin-left: -30px;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+    background-color: gray;
+    padding: 0.5em 2em;
 }
 
-.nav-links {
+.navbar-brand {
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.navbar-brand:hover {
+    color: whitesmoke; 
+  }
+
+.navbar-link {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-links li a {
-    color: white;
+.nav-item a {
     text-decoration: none;
-    font-size: 1em;
-    transition: color 0.3s;
+    color: whitesmoke;
 }
 
-.nav-links li a:hover {
-    color: #ff004f;
+.nav-item a:hover {
+    text-decoration: underline;
 }
 
 .render_anchor{
@@ -80,7 +87,11 @@ nav {
 
 .content h1 span {
     color: #ff004f;
-}
+    font-family: "Playwrite DK Loopet", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
 
 .content h2 {
     font-size: 1.8em;
