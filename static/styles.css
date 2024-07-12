@@ -1,0 +1,305 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "Montserrat", sans-serif, Arial;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ----------------navbar --------------- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: gray;
+    padding: 0.5em 2em;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.navbar-brand:hover {
+    color: whitesmoke; 
+  }
+
+.navbar-link {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+.render_anchor{
+    color: #969696;
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    font-style: italic;
+    font-size: 20px; /* Font size */
+    margin-top: 5%;
+    display: block; /* Ensures the margin applies correctly */
+}
+
+.render_anchor:hover {
+    color: red; /* Change text color on hover */
+    text-decoration: underline; /* Add underline on hover */
+  }
+
+
+.home_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.content p {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.content h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.content h1 span {
+    color: #ff004f;
+    font-family: "Playwrite DK Loopet", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+.content h2 {
+    font-size: 1.8em;
+    margin: 10px 0 0;
+}
+
+.image img {
+    width: 120%;
+    height: auto;
+}
+
+#about p{
+    text-indent: 5%;
+}
+
+#projects h2{
+    margin-bottom: 5%;
+}
+
+.centered-image {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-inner img {
+    border-radius: 15px;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 10px;
+}
+
+.carousel-indicators li {
+    background-color: transparent;
+    border: 1px solid white;
+    width: 20px;
+    height: 0.1px;
+  }
+
+
+.section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.section p, .section ul {
+    font-size: 1.2em;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    background: #222;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 1200px){
+    .nav-links li a {
+        font-size: .9em;
+    }
+
+    .home_container {
+        gap:10px;
+    }
+
+    .content{
+        width: 300px;
+    }
+    .content p {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+    
+    .content h1 {
+        font-size: 2em;
+        margin: 0;
+    }
+    
+    .content h2 {
+        font-size: 1.3em;
+        margin: 10px 0 0;
+    }
+    .image img {
+        width: 100%;
+    }
+    .section {
+        max-width: 600px;
+    }
+    .section h2 {
+        font-size: 1.5em;
+    }
+    
+    .section p, .section ul {
+        font-size: 1em;
+    }
+    .project_image{
+        height: 170px;
+        width: 170px;
+    }
+    .project_container .proj_title {
+        font-size: 1em;
+    }
+    
+    .project_container .proj_summary {
+        font-size: 0.9em;
+        text-indent: 5%;
+    }
+    footer{
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 700px){
+    .nav-links li a {
+        font-size: .9em;
+    }
+    .home_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centers items vertically within the flex container */
+        align-items: center; /* Centers items horizontally within the flex container */
+        width: 300px;
+        text-align: center;
+    }
+    .content{
+        order:1;
+        width: 220px;
+    }
+    .image{
+        order:2;
+    }
+    .content p {
+        font-size: 0.75em;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .content h1 {
+        font-size: 1.3em;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .content h2 {
+        font-size: 0.8em;
+        margin: 10px 0 0;
+        text-align: center;
+    }
+    .image img {
+        width: 70%;
+    }
+    .section {
+        max-width: 220px;
+    }
+    .section h2 {
+        font-size: 1em;
+    }
+    
+    .section p, .section ul {
+        font-size: 0.8em;
+    }
+    .project_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centers items vertically within the flex container */
+        align-items: center; /* Centers items horizontally within the flex container */
+        width: 200px;
+        text-align: center;
+    }
+    .project_image{
+        height: 100px;
+        width: 100px;
+    }
+    .project_container .proj_title {
+        font-size: 1em;
+    }
+    
+    .project_container .proj_summary {
+        font-size: 0.9em;
+        text-indent: 5%;
+    }
+    footer{
+        font-size: 0.7em;
+    }
+
+    .footer_icon_section {
+        gap: 30px;
+        max-width: 100px;
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+    
+    .footer_icon{
+        height: 20px;
+        width: 20px;
+    }
+}
