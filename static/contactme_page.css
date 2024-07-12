@@ -15,7 +15,7 @@ body, html {
     justify-content: space-between;
     align-items: center;
     background-color: gray;
-    padding: 1em 2em;
+    padding: 0.8em 2em;
 
 }
 
@@ -74,47 +74,7 @@ body, html {
 }
 
 
-/* ----------------------------------------------------Main Content Section-------------------------------------------------- */
-
-.page-section {
-    padding: 2rem;
-    background-color: #f8f9fa;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1300px;
-    margin: 0 auto; /* This centers the .page-section itself horizontally within its parent */
-}
-.page-container p{
-    margin-bottom: 2%;
-    font-size: 1.1em;
-    text-indent:5%;
-}
-
-.project_image{
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
-}
-
-.project_container {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    gap: 10px;
-    background: lightgrey;
-    margin: 15px 0;
-    padding: 10px;
-    border-radius: 7px;
-    align-items: center;
-}
-
-.project_container .proj_title {
-    font-size: 1.1em;
-
-}
-
-.project_container .proj_summary {
-    font-size: 0.9em;
-    text-indent: 5%;
+/* ------------------------------------------------------- Contact Section -------------------------------------------*/
+#contact{
+    margin: 5% 0;
 }
