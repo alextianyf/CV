@@ -1,8 +1,15 @@
 footer {
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
     background-color: gray;
     text-align: center;
+    height: 13vh;
+}
+
+footer .content{
+    font-size: 18px;
+    font-weight: 300;
+
 }
 
 .footer_icon_section {
@@ -11,8 +18,8 @@ footer {
     align-items: center;
     gap: 50px;
     max-width: 150px;
-    margin: 50px auto;
-    padding: 0 20px;
+    margin: 30px auto;
+    padding: 0 10px;
 }
 
 .footer_icon{

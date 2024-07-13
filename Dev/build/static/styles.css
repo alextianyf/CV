@@ -1,91 +1,54 @@
-body {
+body,html {
     background-color: black;
     color: white;
-    font-family: "Montserrat", sans-serif, Arial;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-/* ----------------navbar --------------- */
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background-color: gray;
-    padding: 0.5em 2em;
-}
-
-.navbar-brand {
-    font-weight: bold;
-    color: whitesmoke;
-}
-
-.navbar-brand:hover {
-    color: whitesmoke; 
-  }
-
-.navbar-link {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-item a {
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-.nav-item a:hover {
-    text-decoration: underline;
-}
-
-.render_anchor{
-    color: #969696;
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold text */
-    font-style: italic;
-    font-size: 20px; /* Font size */
-    margin-top: 5%;
-    display: block; /* Ensures the margin applies correctly */
-}
-
-.render_anchor:hover {
-    color: red; /* Change text color on hover */
-    text-decoration: underline; /* Add underline on hover */
-  }
-
-
-.home_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 50px;
+/*----------------------Set section Layout-----------------------------*/
+.section {
     max-width: 1200px;
     margin: 50px auto;
     padding: 0 20px;
 }
 
-.content p {
+.section .section-title {/*Title: About Me, Skill, Projects and Research*/
     font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/*Set aboutme and Skill content font size*/
+.section p, .section ul {
+    font-size: 1em;
+    font-weight: 280;
+}
+
+/*----------------------Home image section-----------------------------*/
+.home-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;/*Control the content Width*/
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.home-image img {
+    width: 120%;
+    height: auto;
+}
+
+.home-content .title {
+    font-size: 1.3em;
+    font-weight: 350;
     margin-bottom: 10px;
 }
 
-.content h1 {
-    font-size: 2.5em;
+.home-content .name-section {
+    font-size: 2.3em;
     margin: 0;
 }
 
-.content h1 span {
+.home-content .name-section .name {
     color: #ff004f;
     font-family: "Playwrite DK Loopet", cursive;
     font-optical-sizing: auto;
@@ -93,20 +56,27 @@ body {
     font-style: normal;
   }
 
-.content h2 {
-    font-size: 1.8em;
+.home-content .school {
+    font-size: 1.5em;
     margin: 10px 0 0;
 }
 
-.image img {
-    width: 120%;
-    height: auto;
-}
-
+/*----------------------About me section-----------------------------*/
 #about p{
     text-indent: 5%;
 }
 
+
+/*----------------------Skill section-----------------------------*/
+#skills .content-section .background {/*Set bullet point grey background*/
+    background: #222;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/*----------------------Project section-----------------------------*/
 #projects h2{
     margin-bottom: 5%;
 }
@@ -131,35 +101,35 @@ body {
     border: 1px solid white;
     width: 20px;
     height: 0.1px;
-  }
-
-
-.section {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 20px;
 }
 
-.section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+.carousel-control-prev, .carousel-control-next {
+    background-color: transparent; /* Remove default background color */
 }
 
-.section p, .section ul {
-    font-size: 1.2em;
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: transparent; /* Ensure background remains transparent on hover */
 }
 
-.section ul {
-    list-style: none;
-    padding: 0;
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: transparent; /* Ensure icons have a transparent background */
 }
 
-.section ul li {
-    background: #222;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
+.render_anchor{
+    color: #969696;
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    font-style: italic;
+    font-size: 20px; /* Font size */
+    margin-top: 5%;
+    display: block; /* Ensures the margin applies correctly */
 }
+
+.render_anchor:hover {
+    color: white; /* Change text color on hover */
+}
+
+
 
 
 @media (max-width: 1200px){

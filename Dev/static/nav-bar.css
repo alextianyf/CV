@@ -1,0 +1,37 @@
+/*--------------------------------------Nav Bar Section ------------------------------------------*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+    padding: 0.8em 2em;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+.navbar-brand:hover{
+    color: whitesmoke;
+}
+
+.navbar-link {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}

@@ -5,6 +5,8 @@
     {% include "header.html" %}
     {% endblock %}
     <!--Loading Styles-->
+    <link rel="stylesheet" href="static/body_style.css">
+    <link rel="stylesheet" href="static/nav-bar.css">
     <link rel="stylesheet" href="static/styles.css">
     <link rel="stylesheet" href="static/nav-bar.css">
     <link rel="stylesheet" href="static/footer.css">
@@ -12,7 +14,7 @@
 </head>
 
 <body>
-    <!-- ---------------Nav bar section-------------- -->
+    <!-----------------Nav bar section--------------->
     <nav class="navbar">
         <div class="navbar-brand">Home</div>
         <ul class="navbar-link">
@@ -24,21 +26,23 @@
     </nav>
     
     <main>
+        <!-----------------Home Image section---------------->
         <section id="home">
-            <div class="home_container">
-                <div class="image">
+            <div class="home-container">
+                <div class="home-image">
                     <img src="static/images/image.png" alt="Alex Tian">
                 </div>
-                <div class="content">
-                    <p>Machine Learning Engineer</p>
-                    <h1>Hi, I'm <span>Alex Tian</span></h1>
-                    <h2>Master of Applied Science from University of Victoria</h2>
+                <div class="home-content">
+                    <p class="title">Machine Learning Engineer</p>
+                    <h1 class="name-section">Hi, I'm <span class="name">Alex Tian</span></h1>
+                    <h2 class="school">Master of Applied Science from University of Victoria</h2>
                 </div>
             </div>
         </section>
 
+        <!-----------------About me section---------------->
         <section id="about" class="section">
-            <h2>About Me</h2>
+            <h2 class="section-title">About Me</h2>
             <p>My name is Alex (Yunfei) Tian, and I am an international student from China. 
                 I hold an undergraduate degree in Electrical Engineering and have been recognized on the Dean's Honour Roll, 
                 receiving multiple International Student Scholarships. 
@@ -46,24 +50,26 @@
                 with a primary academic focus on Artificial Intelligence. 
                 My areas of interest also include Robotics, Embedded Systems, and the Internet of Things.
             </p>
-        
         </section>
+
+        <!-----------------Skill section---------------->
         <section id="skills" class="section">
-            <h2>Skills</h2>
-            <ul>
-                <li><b>Programming Languages</b>: C, C++, Python, HTML, CSS</li>
-                <li><b>Artificial Intelligence</b>: Machine Learning, Neural Networks</li>
-                <li><b>Robotics</b>: Robot Operating System (ROS), Sensors, Actuators</li>
-                <li><b>Embedded Systems</b>: Microcontrollers, RTOS, Circuit Design, PCB Design</li>
-                <li><b>Internet of Things (IoT)</b>: IoT Protocols, Device Integration, Cloud Services</li>
+            <h2 class="section-title">Skills</h2>
+            <ul class="content-section">
+                <li class="background"><b>Programming Languages</b>: C, C++, Python, HTML, CSS</li>
+                <li class="background"><b>Artificial Intelligence</b>: Machine Learning, Neural Networks</li>
+                <li class="background"><b>Robotics</b>: Robot Operating System (ROS), Sensors, Actuators</li>
+                <li class="background"><b>Embedded Systems</b>: Microcontrollers, RTOS, Circuit Design, PCB Design</li>
+                <li class="background"><b>Internet of Things (IoT)</b>: IoT Protocols, Device Integration, Cloud Services</li>
             </ul>
         </section>
 
+        <!-----------------Project section---------------->
         <section id="projects" class="section">
-            <h2>Projects and Research</h2>
+            <h2 class="section-title">Projects and Research</h2>
             
+            <!--image sliding section-->
             <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
@@ -93,16 +99,15 @@
                         </div>   
                     </div>
                 </div>
-
                 <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </button>
-
             </div>
-
+            
+            <!--Hyper link to project page-->
             <a class="render_anchor" href="projects_page.html">More Projects</a>
         </section>
         

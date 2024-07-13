@@ -7,6 +7,16 @@ import logging
 app = Flask(__name__)
 freezer = Freezer(app)
 
+def copy_and_override(src, dst):
+    # Check if the destination folder exists
+    if os.path.exists(dst):
+        # Remove the destination folder and its contents
+        shutil.rmtree(dst)
+    
+    # Copy the source folder to the destination
+    shutil.copytree(src, dst)
+    print(f"Folder copied from {src} to {dst}")
+
 @app.route('/home.html')
 def get_home():
     return render_template('home.html')
@@ -62,3 +72,13 @@ if __name__ == '__main__':
         logging.error(f'The file {source_path} does not exist')
     except Exception as e:
         logging.error(f'An error occurred while copying the file: {e}')
+    
+    # Define source and destination paths
+    src = 'D:\Project_Hub\WebDev Workspace\CV\Dev\static'
+    dst = 'D:\Project_Hub\WebDev Workspace\CV\static'
+
+    # Copy the folder and override if it exists
+    try:
+        copy_and_override(src, dst)
+    except Exception as e:
+        print(f"Error: {e}")
