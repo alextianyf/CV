@@ -1,0 +1,59 @@
+/* ----------------------------------------------------Main Content Section-------------------------------------------------- */
+
+/*Entire content section for the centent*/
+.page-section {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;/*Section Width*/
+    margin: 0 auto; /* This centers the .page-section itself horizontally within its parent */
+}
+
+/*Intro before the project cards*/
+.page-container p{
+    margin-bottom: 2%;
+    font-weight: 300;
+    font-size: 1em;
+    text-indent:4%;
+}
+
+/*Project card section inside of main centent section*/
+.Project-cards{
+    max-width:1300px;
+}
+
+/*project card style and layout*/
+.project_container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+    background: lightgrey;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 7px;
+    align-items: center;
+}
+
+/*project card image*/
+.project_image{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+}
+
+/*project card title*/
+.project_container .proj_title {
+    font-size: 1.2em;
+    font-weight: 300;
+
+}
+
+/*project card content*/
+.project_container .proj_summary {
+    font-size: 0.9em;
+    font-weight: 300;
+    text-indent: 4%;
+}

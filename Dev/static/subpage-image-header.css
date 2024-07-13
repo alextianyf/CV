@@ -1,8 +1,7 @@
-
 /* ------------------------------------------------------- Header Section -------------------------------------------*/
-.masthead {
+.subpage-image-header {
     position: relative;
-    height: 80vh;
+    height: 75vh;/*Set image height*/
     color: white;
     text-align: center;
     display: flex;
@@ -11,7 +10,7 @@
     flex-direction: column;
 }
 
-.masthead .background-image {
+.subpage-image-header .background-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -21,18 +20,13 @@
     z-index: -1; /* Ensure the image stays in the background */
 }
 
-.masthead h1 {
-    font-size: 2rem;
+.subpage-image-header h1 {
+    font-size: 1.8rem;
     margin: 0;
 }
 
-.masthead p {
-    font-size: 1.5rem;
+.subpage-image-header p {
+    font-size: 1.3rem;
+    font-weight: 300;
     margin: 0.5rem 0 0;
-}
-
-
-/* ------------------------------------------------------- Contact Section -------------------------------------------*/
-#contact{
-    margin: 5% 0;
 }

@@ -47,3 +47,11 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+/*Give extra margin top and bottom for contact section*/
+#contact .section-title{
+    margin-top: 3%;
+}
+#contact .btn{
+    margin-bottom: 3%;
+}

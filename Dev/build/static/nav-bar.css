@@ -5,6 +5,7 @@
     align-items: center;
     background-color: gray;
     padding: 0.8em 2em;
+    height: 6vh;
 }
 
 .navbar-brand {
