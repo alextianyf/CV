@@ -30,3 +30,61 @@
     font-weight: 300;
     margin: 0.5rem 0 0;
 }
+
+/*
+
+--------------------------Tablet Size Responsive Sectinn--------------------
+NOTE: 800x to 1200px
+
+*/
+
+@media (max-width: 1200px){
+    .subpage-image-header {
+        height: 70vh;/*Set image height*/
+    }
+    .subpage-image-header h1 {
+        font-size: 1.5rem;
+    }
+    .subpage-image-header p {
+        font-size: 1rem;
+    }
+}
+
+
+/*
+
+--------------------------Tablet Size Responsive Sectinn--------------------
+NOTE: 450x to 800px
+
+*/
+
+@media (max-width: 800px){
+    .subpage-image-header {
+        height: 50vh;/*Set image height*/
+    }
+    .subpage-image-header h1 {
+        font-size: 1.2rem;
+    }
+    .subpage-image-header p {
+        font-size: 0.8rem;
+    }
+}
+
+
+/*
+--------------------------Tablet Size Responsive Sectinn--------------------
+NOTE: Below 450x
+
+*/
+@media (max-width: 450px){
+    .subpage-image-header {
+        height: 30vh;/*Set image height*/
+    }
+    .subpage-image-header h1 {
+        font-size: 0.9rem;
+    }
+    .subpage-image-header p {
+        font-size: 0.5rem;
+    }
+
+}

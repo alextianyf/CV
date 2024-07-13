@@ -3,6 +3,16 @@ body,html {
     color: white;
 }
 
+/*
+--------------------------Computer Size Responsive Section--------------------
+NOTE: above 1200px
+1. Change the nav-bar font size
+2. Image and Image section Font size
+3. Mean section Width
+4. Mean Section Font size
+5. Project Image size
+*/
+
 /*----------------------Set section Layout-----------------------------*/
 .section {
     max-width: 1200px;
@@ -27,7 +37,7 @@ body,html {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 50px;
-    max-width: 1200px;/*Control the content Width*/
+    max-width: 1200px;/*Set school content width*/
     margin: 50px auto;
     padding: 0 20px;
 }
@@ -54,7 +64,7 @@ body,html {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-  }
+}
 
 .home-content .school {
     font-size: 1.5em;
@@ -63,7 +73,7 @@ body,html {
 
 /*----------------------About me section-----------------------------*/
 #about p{
-    text-indent: 5%;
+    text-indent: 4%;
 }
 
 
@@ -130,146 +140,180 @@ body,html {
 }
 
 
+/*
 
+--------------------------Tablet Size Responsive Sectinn--------------------
+NOTE: 800x to 1200px
+1. Change the nav-bar font size
+2. Image and Image section Font size
+3. Mean section Width
+4. Mean Section Font size
+5. Project Image size
+6. Project Project anchor link Font size
+7. Footer Height
+8. Footer Icon Size
+9. Footer Font Size
+*/
 
 @media (max-width: 1200px){
-    .nav-links li a {
-        font-size: .9em;
+    /*main section size */
+    .section {
+        max-width: 750px;
     }
 
-    .home_container {
-        gap:10px;
-    }
-
-    .content{
-        width: 300px;
-    }
-    .content p {
-        font-size: 1em;
-        margin-bottom: 10px;
-    }
-    
-    .content h1 {
-        font-size: 2em;
-        margin: 0;
-    }
-    
-    .content h2 {
-        font-size: 1.3em;
-        margin: 10px 0 0;
-    }
-    .image img {
+    /*image size*/
+    .home-image img {
         width: 100%;
     }
-    .section {
-        max-width: 600px;
+
+    /*Set home Image section Font*/
+    .home-container{
+        max-width: 750px;/*Set school content width*/
     }
-    .section h2 {
-        font-size: 1.5em;
-    }
-    
-    .section p, .section ul {
-        font-size: 1em;
-    }
-    .project_image{
-        height: 170px;
-        width: 170px;
-    }
-    .project_container .proj_title {
-        font-size: 1em;
-    }
-    
-    .project_container .proj_summary {
-        font-size: 0.9em;
-        text-indent: 5%;
-    }
-    footer{
+    .home-content .title {
         font-size: 0.9em;
     }
+    .home-content .name-section {
+        font-size: 1.6em;
+    }
+    .home-content .school {
+        font-size: 1.1em;
+    }
+
+    /*Set main content Size font size*/
+    .section .section-title {/*Title: About Me, Skill, Projects and Research*/
+        font-size: 1em;
+    }
+    .section p, .section ul {/*Set aboutme and Skill content font size*/
+        font-size: 0.8em;
+    }
+
+    /*Project image section*/
+    .carousel-inner img {
+        width: 45%;
+        height: 45%;
+    }
+
+    /*Project Anchor Link Font Size*/
+    .render_anchor{
+        font-size: 15px; /* Font size */
+    }
+
 }
 
-@media (max-width: 700px){
-    .nav-links li a {
-        font-size: .9em;
-    }
-    .home_container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center; /* Centers items vertically within the flex container */
-        align-items: center; /* Centers items horizontally within the flex container */
-        width: 300px;
-        text-align: center;
-    }
-    .content{
-        order:1;
-        width: 220px;
-    }
-    .image{
-        order:2;
-    }
-    .content p {
-        font-size: 0.75em;
-        margin-bottom: 10px;
-        text-align: center;
+
+/*
+
+--------------------------Tablet Size Responsive Sectinn--------------------
+NOTE: 450x to 800px
+1. Change the nav-bar font size
+2. Image and Image section Font size
+3. Mean section Width
+4. Mean Section Font size
+5. Project Image size
+6. Project Project anchor link Font size
+7. Footer Height
+8. Footer Icon Size
+9. Footer Font Size
+*/
+
+@media (max-width: 800px){
+    .home-container {
+        gap: 10px;
     }
     
-    .content h1 {
-        font-size: 1.3em;
-        margin: 0;
-        text-align: center;
-    }
-    
-    .content h2 {
-        font-size: 0.8em;
-        margin: 10px 0 0;
-        text-align: center;
-    }
-    .image img {
-        width: 70%;
-    }
+    /*main section size */
     .section {
-        max-width: 220px;
+        max-width: 500px;
     }
-    .section h2 {
-        font-size: 1em;
+
+    /*image size*/
+    .home-image img {
+        width: 75%;
     }
-    
-    .section p, .section ul {
-        font-size: 0.8em;
+
+    /*Set home Image section Font*/
+    .home-container{
+        max-width: 500px;/*Set school content width*/
     }
-    .project_container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center; /* Centers items vertically within the flex container */
-        align-items: center; /* Centers items horizontally within the flex container */
-        width: 200px;
-        text-align: center;
+    .home-content .title {
+        font-size: 0.5em;
     }
-    .project_image{
-        height: 100px;
-        width: 100px;
-    }
-    .project_container .proj_title {
-        font-size: 1em;
-    }
-    
-    .project_container .proj_summary {
+    .home-content .name-section {
         font-size: 0.9em;
-        text-indent: 5%;
     }
-    footer{
+    .home-content .school {
         font-size: 0.7em;
     }
 
-    .footer_icon_section {
-        gap: 30px;
-        max-width: 100px;
-        margin: 30px auto;
-        padding: 0 15px;
+    /*Set main content Size font size*/
+    .section .section-title {/*Title: About Me, Skill, Projects and Research*/
+        font-size: 0.8em;
     }
-    
-    .footer_icon{
-        height: 20px;
-        width: 20px;
+    .section p, .section ul {/*Set aboutme and Skill content font size*/
+        font-size: 0.6em;
     }
+
+    /*Project Anchor Link Font Size*/
+    .render_anchor{
+        font-size: 15px; /* Font size */
+    }
+
+}
+
+
+/*
+--------------------------Tablet Size Responsive Sectinn--------------------
+NOTE: Below 450x
+1. Change the nav-bar font size
+2. Image and Image section Font size
+3. Mean section Width
+4. Mean Section Font size
+5. Project Image size
+6. Project Project anchor link Font size
+7. Footer Height
+8. Footer Icon Size
+9. Footer Font Size
+*/
+@media (max-width: 450px){
+    .home-container {
+        gap: 4px;
+    }
+    /*main section size */
+    .section {
+        max-width: 350px;
+    }
+
+    /*image size*/
+    .home-image img {
+        width: 65%;
+    }
+
+    /*Set home Image section Font*/
+    .home-container{
+        max-width: 350px;/*Set school content width*/
+    }
+    .home-content .title {
+        font-size: 0.5em;
+    }
+    .home-content .name-section {
+        font-size: 1em;
+    }
+    .home-content .school {
+        font-size: 0.8em;
+    }
+
+    /*Set main content Size font size*/
+    .section .section-title {/*Title: About Me, Skill, Projects and Research*/
+        font-size: 0.9em;
+    }
+    .section p, .section ul {/*Set aboutme and Skill content font size*/
+        font-size: 0.6em;
+    }
+
+    /*Project Anchor Link Font Size*/
+    .render_anchor{
+        font-size: 11px; /* Font size */
+    }
+
 }
