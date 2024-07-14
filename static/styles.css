@@ -218,8 +218,28 @@ NOTE: 450x to 800px
 */
 
 @media (max-width: 800px){
+
+    /*Change layout to up and down*/
     .home-container {
-        gap: 10px;
+        display: flex;
+        flex-direction: column; /* Use column for up-and-down layout */
+        justify-content: center; /* Centers items vertically within the flex container */
+        align-items: center; /* Centers items horizontally within the flex container */
+        text-align: center;
+    }
+    
+    .home-content {
+        order: 1; /* Ensure content appears first */
+        margin-bottom: 10px; /* Add some space between the content and the image */
+    }
+    
+    .home-image {
+        order: 2; /* Ensure image appears second */
+    }
+    
+    .home-image img {
+        max-width: 100%; /* Ensure the image does not exceed its container */
+        height: auto; /* Maintain the aspect ratio */
     }
     
     /*main section size */
@@ -233,17 +253,14 @@ NOTE: 450x to 800px
     }
 
     /*Set home Image section Font*/
-    .home-container{
-        max-width: 500px;/*Set school content width*/
-    }
     .home-content .title {
-        font-size: 0.5em;
+        font-size: 0.7em;
     }
     .home-content .name-section {
-        font-size: 0.9em;
+        font-size: 1em;
     }
     .home-content .school {
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
 
     /*Set main content Size font size*/
@@ -276,9 +293,29 @@ NOTE: Below 450x
 9. Footer Font Size
 */
 @media (max-width: 450px){
+    /*Change layout to up and down*/
     .home-container {
-        gap: 4px;
+        display: flex;
+        flex-direction: column; /* Use column for up-and-down layout */
+        justify-content: center; /* Centers items vertically within the flex container */
+        align-items: center; /* Centers items horizontally within the flex container */
+        text-align: center;
     }
+    
+    .home-content {
+        order: 1; /* Ensure content appears first */
+        margin-bottom: 0; /* Add some space between the content and the image */
+    }
+    
+    .home-image {
+        order: 2; /* Ensure image appears second */
+    }
+    
+    .home-image img {
+        max-width: 100%; /* Ensure the image does not exceed its container */
+        height: auto; /* Maintain the aspect ratio */
+    }
+
     /*main section size */
     .section {
         max-width: 350px;
@@ -294,7 +331,7 @@ NOTE: Below 450x
         max-width: 350px;/*Set school content width*/
     }
     .home-content .title {
-        font-size: 0.5em;
+        font-size: 0.65em;
     }
     .home-content .name-section {
         font-size: 1em;
