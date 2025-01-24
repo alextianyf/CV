@@ -12,8 +12,6 @@ def load_template(filename):
         print(f"Error reading {filename}: {e}")
         return ''
 
-# Ensure the generated file folder exsits
-os.makedirs('pages', exist_ok=True)
 
 '''
 @objective: Loading header, contact, footer for public page HTML
