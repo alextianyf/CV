@@ -78,13 +78,17 @@ NOTE: above 1200px
 
 
 /*----------------------Skill section-----------------------------*/
+.content-section {
+    list-style: none;  /* Removes bullets */
+    padding-left: 0;   /* Align content to the left */
+}
+
 #skills .content-section .background {/*Set bullet point grey background*/
     background: #222;
-    margin: 5px 0;
+    margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
 }
-
 
 /*----------------------Project section-----------------------------*/
 #projects h2{
