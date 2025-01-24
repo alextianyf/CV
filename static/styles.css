@@ -34,11 +34,11 @@ NOTE: above 1200px
 /*----------------------Home image section-----------------------------*/
 .home-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 4fr;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
     max-width: 1200px;/*Set school content width*/
-    margin: 50px auto;
+    margin: 40px auto;
     padding: 0 20px;
 }
 
