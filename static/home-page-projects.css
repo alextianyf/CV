@@ -1,0 +1,46 @@
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 小屏默认单列 */
+    gap: 30px;
+  }
+  
+  @media (min-width: 800px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr); /* 800px以上两列 */
+    }
+  }
+  
+  .project-card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-image-container.bg-image {
+    aspect-ratio: 4 / 3;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+    position: relative;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .card-text {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    color: #dddddd;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .card-text h3,
+  .card-text p {
+    margin: 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  }
