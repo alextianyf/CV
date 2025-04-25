@@ -1,17 +1,13 @@
 /*--------------------------------------Nav Bar Section ------------------------------------------*/
 .navbar {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
     align-items: center;
-    background-color: gray;
-    padding: 0 2em;
-    height: 6vh;
-}
-
-.navbar-brand {
-    font-weight: bold;
-    color: whitesmoke;
-    font-size: 25px;
+    background-color: #444;
+    padding: 1em 2em;
+    min-height: 60px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
 }
 
 .navbar-brand:hover{
@@ -28,13 +24,17 @@
 
 .nav-item a {
     text-decoration: none;
-    color: whitesmoke;
+    color: #f0f0f0;
     font-weight: 400;
     font-size: 20px;
+    line-height: 1;
+    transition: color 0.5s ease, letter-spacing 0.5s ease;
 }
 
 .nav-item a:hover {
-    text-decoration: underline;
+    color: #cccccc;
+    letter-spacing: 1px;
+    opacity: 0.85;
 }
 
 /*
@@ -53,15 +53,12 @@ NOTE: 800x to 1200px
 
 @media (max-width: 1200px){
     .navbar {
-        height: 4.5vh;
-    }
-
-    .navbar-brand {
-        font-size: 18px;
+        padding: 0.6em 1.5em;
+        min-height: 55px;
     }
 
     .nav-item a {
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 
@@ -79,17 +76,22 @@ NOTE: 450px to 800px
 9. Footer Font Size
 */
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
     .navbar {
-        height: 3vh;
+        flex-direction: row;          /* 保持横向排布 */
+        justify-content: center;
+        align-items: center;
+        padding: 0.6em 1em;
+        min-height: 50px;
     }
 
-    .navbar-brand {
-        font-size: 15px;
+    .navbar-link {
+        flex-direction: row;
+        gap: 0.8rem;
     }
 
     .nav-item a {
-        font-size: 10px;
+        font-size: 13px;
     }
 }
 
@@ -107,16 +109,12 @@ NOTE: below 450px
 9. Footer Font Size
 */
 
-@media (max-width: 450px){
+@media (max-width: 450px) {
     .navbar {
-        height: 3vh;
-    }
-
-    .navbar-brand {
-        font-size: 10px;
+        padding: 0.6em 0.8em;
     }
 
     .nav-item a {
-        font-size: 8px;
+        font-size: 10px;
     }
 }
