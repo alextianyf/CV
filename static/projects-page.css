@@ -1,164 +1,82 @@
-/* ----------------------------------------------------Main Content Section-------------------------------------------------- */
-
-/*Entire content section for the centent*/
+/* Section wrapper */
 .page-section {
-    padding: 2rem;
-    background-color: #f8f9fa;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1400px;/*Section Width*/
-    margin: 0 auto; /* This centers the .page-section itself horizontally within its parent */
+  padding: 2rem;
+  background-color: #f8f9fa;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-/*Intro before the project cards*/
-.page-container p{
-    margin-bottom: 2%;
-    font-weight: 300;
+/* Grid layout */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Individual card */
+.project-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Project image */
+.project-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* Text content */
+.card-body {
+  padding: 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-grow: 1;
+}
+
+.card-body h3 {
+  font-size: 1.1em;
+  margin: 0;
+  font-weight: 600;
+}
+
+.card-body p {
+  font-size: 0.9em;
+  font-weight: 300;
+  margin: 0;
+  color: #333;
+  flex-grow: 1;
+}
+
+/* Button link */
+.card-body a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 0.9em;
+  font-weight: 500;
+  margin-top: auto;
+}
+
+.card-body a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive tweak (optional) */
+@media (max-width: 500px) {
+  .card-body h3 {
     font-size: 1em;
-    text-indent:4%;
-}
-
-/*Project card section inside of main centent section*/
-.Project-cards{
-    max-width:1300px;
-}
-
-/*project card style and layout*/
-.project_container {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    gap: 10px;
-    background: lightgrey;
-    margin: 15px 0;
-    padding: 10px;
-    border-radius: 7px;
-    align-items: center;
-}
-
-/*project card image*/
-.project_image{
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
-}
-
-/*project card title*/
-.project_container .proj_title {
-    font-size: 1.2em;
-    font-weight: 300;
-
-}
-
-/*project card content*/
-.project_container .proj_summary {
-    font-size: 0.9em;
-    font-weight: 300;
-    text-indent: 4%;
-}
-
-/*
-
---------------------------Tablet Size Responsive Sectinn--------------------
-NOTE: 800x to 1200px
-
-*/
-
-@media (max-width: 1200px){
-    .page-section {
-        max-width: 750px;/*Section Width*/
-    }
-
-    .page-container p{
-        font-size: 0.9em;
-    }
-
-    .Project-cards{
-        max-width:700px;
-    }
-
-    .project_image{
-        height: 200px;
-        width: 200px;
-    }
-
-    .project_container .proj_title {
-        font-size: 1.1em;
-    }
-
-    /*project card content*/
-    .project_container .proj_summary {
-        font-size: 0.8em;
-    }
-}
-
-
-/*
-
---------------------------Tablet Size Responsive Sectinn--------------------
-NOTE: 450x to 800px
-
-*/
-
-@media (max-width: 800px){
-    .page-section {
-        max-width: 400px;/*Section Width*/
-    }
-
-    .page-container p{
-        font-size: 0.7em;
-    }
-
-    .Project-cards{
-        max-width:350px;
-    }
-
-    .project_image{
-        height: 150px;
-        width: 150px;
-    }
-
-    .project_container .proj_title {
-        font-size: 0.7em;
-    }
-
-    /*project card content*/
-    .project_container .proj_summary {
-        font-size: 0.5em;
-    }
-}
-
-
-/*
---------------------------Tablet Size Responsive Sectinn--------------------
-NOTE: Below 450x
-
-*/
-@media (max-width: 450px){
-    .page-section {
-        max-width: 375px;/*Section Width*/
-    }
-
-    .page-container p{
-        font-size: 0.5em;
-    }
-
-    .Project-cards{
-        max-width:350px;
-    }
-
-    .project_image{
-        height: 100px;
-        width: 100px;
-    }
-
-    .project_container .proj_title {
-        font-size: 0.7em;
-    }
-
-    /*project card content*/
-    .project_container .proj_summary {
-        font-size: 0.5em;
-    }
+  }
+  .card-body p {
+    font-size: 0.85em;
+  }
 }
