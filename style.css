@@ -90,7 +90,7 @@ body, html {
     height: calc(100vh - 70px);
     padding: 40px 60px;
     overflow: hidden;
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
