@@ -1,0 +1,245 @@
+/* About Page CSS */
+
+.section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #e63946;
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: #e63946;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #bbb;
+}
+
+.highlight {
+    color: inherit;
+    font-weight: 600;
+}
+
+/* Skills Section */
+/* Skill Cards Layout */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.skill-card {
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.05);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease forwards;
+}
+
+/* 动画效果：卡片淡入 */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover时小悬浮 */
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(230, 57, 70, 0.3);
+}
+
+/* Skill Card Title */
+.skill-card h3 {
+    font-size: 22px;
+    color: #ccc;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+/* Hover标题变红 */
+.skill-card:hover h3 {
+    color: #e63946;
+}
+
+/* 列表样式优化 */
+.skill-card ul {
+    list-style: none;
+    padding-left: 0;
+    color: #bbb;
+    font-size: 16px;
+}
+
+.skill-card li {
+    margin-bottom: 10px;
+    line-height: 1.8;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* 自定义小红点 */
+.skill-card li::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #e63946;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 9px;
+}
+
+/* Awards Section */
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.award-card {
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: inset 0 0 5px rgba(255,255,255,0.05);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.award-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(230, 57, 70, 0.3);
+}
+
+.award-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.award-card h3 {
+    font-size: 20px;
+    color: #ccc;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.award-card:hover h3 {
+    color: #e63946; /* hover时才变红 */
+}
+
+.award-card p {
+    font-size: 16px;
+    color: #bbb;
+}
+
+/* Roadmap Section */
+.timeline {
+    position: relative;
+    margin-top: 50px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #e63946;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-icon {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: #e63946;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.timeline-content {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.timeline-content h3 {
+    font-size: 22px;
+    color: #e63946;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 16px;
+    color: #bbb;
+    margin-bottom: 10px;
+}
+
+.timeline-content img {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Responsive Timeline */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 10px;
+    }
+    .timeline-item {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        left: 0;
+        text-align: left;
+    }
+    .timeline-icon {
+        left: 10px;
+        transform: none;
+    }
+}

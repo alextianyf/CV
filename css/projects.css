@@ -1,0 +1,66 @@
+.section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff004f;
+}
+
+/* Project Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.project-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+/* Hover Effect */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(255, 0, 79, 0.4);
+}
+
+.github-button {
+    display: inline-block;
+    padding: 8px 20px;
+    background: #ff004f;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.github-button:hover {
+    background: #e60045;
+}

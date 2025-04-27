@@ -110,7 +110,7 @@
         justify-content: center;
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     .home-text .name-section {
         font-size: 28px;
     }
