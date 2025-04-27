@@ -15,9 +15,11 @@ body, html {
 /* ========== Navigation Bar ========== */
 .navbar {
     width: 100%;
-    background-color: #1a1a1a; /* 更深灰色 */
-    height: 70px;
-    padding: 15px 60px;
+    background-color: #1a1a1a;
+    height: 70px; /* 固定高度 */
+    padding: 14px 60px; /* 只左右padding，不要上下padding */
+    display: flex; /* 新增 */
+    align-items: center; /* 新增：让内部文字竖直居中 */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -189,4 +191,134 @@ body, html {
         opacity: 1;
         transform: translateX(0) translateY(0);
     }
+}
+
+/* ========== Responsive Design ========== */
+
+/* 1200px 以下：大平板或小屏桌面 */
+@media (max-width: 1200px) {
+    .home-container {
+        padding: 30px 40px;
+    }
+
+    .navbar-links {
+        gap: 30px;
+    }
+
+    .home-text .name-section {
+        font-size: 36px;
+    }
+
+    .home-text .subtitle {
+        font-size: 20px;
+    }
+
+    .home-text .self-intro {
+        font-size: 16px;
+    }
+}
+
+/* 768px 以下：iPad竖屏或小平板或大手机 */
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        padding: 30px 20px;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .home-image {
+        max-height: 50vh;
+        margin-bottom: 30px;
+    }
+
+    .home-content {
+        max-height: none;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-text .name-section {
+        font-size: 32px;
+    }
+
+    .home-text .subtitle {
+        font-size: 18px;
+    }
+
+    .home-text .self-intro {
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .navbar-brand {
+        display: none; /* 隐藏 Alex Tian */
+    }
+
+    .navbar-links {
+        gap: 20px;
+    }
+
+    .navbar-links li a {
+        font-size: 14px;
+        white-space: nowrap; /* 防止项目名换行 */
+    }
+
+    .navbar-container {
+        justify-content: center; /* 修改对齐方式为居中 */
+    }
+}
+
+/* 480px 以下：手机小屏 */
+@media (max-width: 480px) {
+    .navbar {
+        height: auto; /* 让navbar自己根据内容决定高度 */
+        padding: 10px 20px;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .navbar-links li a {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .home-text .name-section {
+        font-size: 28px;
+    }
+
+    .home-text .subtitle {
+        font-size: 16px;
+    }
+
+    .home-text .self-intro {
+        font-size: 14px;
+    }
+
+    .social-icons img {
+        width: 32px;
+        height: 32px;
+    }
+
+    
 }
