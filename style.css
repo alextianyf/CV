@@ -12,6 +12,11 @@ body, html {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* ========== Smooth Scroll 全局平滑滚动 ========== */
+html {
+    scroll-behavior: smooth;
+}
+
 /* ========== Navigation Bar ========== */
 .navbar {
     width: 100%;
@@ -113,6 +118,17 @@ body, html {
     border-radius: 10px;
 }
 
+/* ========== 人物照片轻微浮动呼吸感 ========== */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+
+.home-image img {
+    animation: float 5s ease-in-out infinite;
+}
+
 /* 右边内容 */
 .home-content {
     flex: 1;
@@ -167,6 +183,7 @@ body, html {
 
 .social-icons img:hover {
     transform: scale(1.2);
+    box-shadow: 0 4px 12px rgba(255, 0, 79, 0.4);
 }
 
 /* ========== Animation ========== */
