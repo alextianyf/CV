@@ -1,0 +1,127 @@
+/* ========== Home Section ========== */
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 70px);
+    padding: 40px 60px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.home-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-image img {
+    max-height: 100%;
+    max-width: 90%;
+    object-fit: contain;
+    border-radius: 10px;
+    animation: float 5s ease-in-out infinite;
+}
+
+.home-content {
+    flex: 1;
+    background-color: rgba(17, 17, 17, 0.85);
+    padding: 40px 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* ========== Home Text ========== */
+.home-text .name-section {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+.home-text .name {
+    color: #ff004f;
+    font-family: "Playwrite DK Loopet", cursive;
+}
+.home-text .subtitle {
+    font-size: 22px;
+    color: #bbbbbb;
+    margin-bottom: 15px;
+}
+.home-text .self-intro {
+    font-size: 18px;
+    color: #bbbbbb;
+    max-width: 600px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* ========== Social Icons ========== */
+.social-icons {
+    display: flex;
+    gap: 25px;
+}
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+.social-icons img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 12px rgba(255, 0, 79, 0.4);
+}
+
+/* ========== Home Responsive ========== */
+@media (max-width: 1200px) {
+    .home-container {
+        padding: 30px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        padding: 30px 20px;
+        height: auto;
+        max-width: 100%;
+    }
+    .home-image {
+        max-height: 50vh;
+        margin-bottom: 30px;
+    }
+    .home-content {
+        max-height: none;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .home-text .name-section {
+        font-size: 32px;
+    }
+    .home-text .subtitle {
+        font-size: 18px;
+    }
+    .home-text .self-intro {
+        font-size: 16px;
+        max-width: 90%;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+}
+@media (max-width: 500px) {
+    .home-text .name-section {
+        font-size: 28px;
+    }
+    .home-text .subtitle {
+        font-size: 16px;
+    }
+    .home-text .self-intro {
+        font-size: 14px;
+    }
+    .social-icons img {
+        width: 32px;
+        height: 32px;
+    }
+}

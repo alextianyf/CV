@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Alex Tian</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DK+Loopet:wght@300&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-brand">Alex Tian</div>
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#projects">Projects & Research</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+        <h2 class="section-title">Contact Me</h2>
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
+            <p style="display:none">
+                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">SEND</button>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>

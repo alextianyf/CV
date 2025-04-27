@@ -1,0 +1,137 @@
+/* ========== Reset ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========== Global Body ========== */
+body, html {
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* ========== Navigation Bar ========== */
+.navbar {
+    width: 100%;
+    background-color: #1a1a1a;
+    height: 70px;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.navbar-links li a {
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    color: #bbb;
+    transition: color 0.3s;
+}
+
+.navbar-links li a:hover {
+    color: #ff004f;
+}
+
+.navbar-links li a.active {
+    color: #ff004f;
+}
+
+.navbar-links li a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #ff004f;
+    transform: scaleX(1);
+}
+
+/* ========== Common Animation ========== */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes fadeSlideUp {
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+}
+
+.animate-left, .animate-right {
+    opacity: 0;
+    transform: translateX(50px) translateY(20px);
+    animation: fadeSlideUp 1.2s ease forwards;
+}
+
+.animate-left {
+    transform: translateX(-50px) translateY(20px);
+    animation-delay: 0s;
+}
+
+.animate-right {
+    transform: translateX(50px) translateY(20px);
+    animation-delay: 0.4s;
+}
+
+/* ========== Global Responsive ========== */
+@media (max-width: 768px) {
+    .navbar-container {
+        justify-content: center;
+    }
+    .navbar-brand {
+        display: none;
+    }
+    .navbar-links {
+        gap: 20px;
+    }
+    .navbar-links li a {
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+    .navbar {
+        height: auto;
+        padding: 10px 20px;
+    }
+    .navbar-container {
+        flex-direction: column;
+    }
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .navbar-links li a {
+        font-size: 14px;
+    }
+}
