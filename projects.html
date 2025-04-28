@@ -9,6 +9,7 @@
 </head>
 <body>
 
+<!-- Navigation Bar -->
 <nav class="navbar">
     <div class="navbar-container">
         <div class="navbar-brand">Alex Tian</div>
@@ -21,24 +22,94 @@
     </div>
 </nav>
 
-<section id="projects" class="section">
-    <h2>Projects & Research</h2>
-    <div class="projects-grid">
-        <div class="project-card">
-            <img src="static/images/projects/project1.png" alt="Project 1">
-            <h3>Gradient Descent Study</h3>
-            <p>Manual implementation of gradient descent optimization paths visualization.</p>
-            <a href="https://github.com/your-repo" target="_blank" class="github-button">View on GitHub</a>
-        </div>
+<!-- Projects Section -->
+<section id="projects" class="section project-section">
+    <h2 class="section-title">Projects & Research</h2>
 
-        <div class="project-card">
-            <img src="static/images/projects/project2.png" alt="Project 2">
-            <h3>Voltage Anomaly Detection</h3>
-            <p>Unsupervised anomaly detection for low-voltage signals with DBSCAN.</p>
-            <a href="https://github.com/your-repo" target="_blank" class="github-button">View on GitHub</a>
+    <!-- Filter Buttons -->
+    <div class="project-filter">
+        <button class="filter-button active" data-category="all">All</button>
+        <button class="filter-button" data-category="AI">AI</button>
+        <button class="filter-button" data-category="Embedded">Embedded</button>
+        <button class="filter-button" data-category="Research">Research</button>
+    </div>
+
+    <!-- Project Card 1 -->
+    <div class="project-card" data-category="AI Research">
+        <div class="project-content">
+            <div class="project-image">
+                <img src="static/images/projects/voltage-anomaly.png" alt="Voltage Anomaly Detection">
+            </div>
+            <div class="project-text">
+                <h3>Voltage Anomaly Detection (Schneider Electric)</h3>
+                <p>Conducted a large-scale statistical analysis of voltage behavior across 200+ corporations to define normal operating ranges. Applied feature engineering, unsupervised learning algorithms (GMM, DBSCAN, K-Means, PCA), and developed a fully automated, scalable ML pipeline using Python (OOP) for anomaly detection and voltage profiling.<br><br>
+                The solution optimized operational efficiency, reduced costs, and enabled automated technician dispatch through intelligent voltage anomaly identification.<br><br><em><strong>Note:</strong> Project details are protected under NDA and not open-sourced.</em></p>
+                <div class="project-tags">
+                    <span>AI</span>
+                    <span>Research</span>
+                </div>
+                <a href="#" class="github-button disabled">Protected by NDA</a>
+            </div>
         </div>
     </div>
+
+    <!-- Project Card 2 -->
+    <div class="project-card" data-category="AI Research">
+        <div class="project-content">
+            <div class="project-image">
+                <img src="static/images/projects/gradient-descent-study.png" alt="Gradient Descent Study">
+            </div>
+            <div class="project-text">
+                <h3>Gradient Descent: Insights into Behavior and Optimization Challenges</h3>
+                <p>Manually implemented and visualized gradient descent optimization paths across various cost functions to investigate convergence behaviors under different initialization strategies and learning rates. Explored phenomena like slow convergence, divergence, oscillations, and local minima through a series of four structured case studies.<br><br>
+                This project highlights practical limitations of gradient-based optimization and provides valuable insights for debugging, hyperparameter tuning, and model optimization in machine learning workflows.</p>
+                <div class="project-tags">
+                    <span>AI</span>
+                    <span>Research</span>
+                </div>
+                <a href="https://github.com/alextianyf/Gradient-Descent-Insights-into-Behavior-and-Optimization-Challenges" target="_blank" class="github-button">View on GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Coming Soon Placeholder -->
+    <div class="project-card" data-category="ComingSoon">
+        <div class="project-content">
+            <div class="project-text">
+                <h3>Coming Soon</h3>
+                <p>New exciting project is under development. Stay tuned for updates!</p>
+                <a href="#" class="github-button disabled">Coming Soon</a>
+            </div>
+        </div>
+    </div>
+
 </section>
+
+<!-- Lightweight JS for Filtering -->
+<script>
+const filterButtons = document.querySelectorAll('.filter-button');
+const projectCards = document.querySelectorAll('.project-card');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const category = button.getAttribute('data-category');
+        
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        projectCards.forEach(card => {
+            const categories = card.getAttribute('data-category').split(' ');
+            if (category === 'all' || categories.includes(category)) {
+                card.style.display = 'block';
+                card.style.opacity = 1;
+            } else {
+                card.style.display = 'none';
+                card.style.opacity = 0;
+            }
+        });
+    });
+});
+</script>
 
 </body>
 </html>
