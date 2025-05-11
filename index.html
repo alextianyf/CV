@@ -1,30 +1,40 @@
 <!DOCTYPE html>
+<!-- Declares the document type and version of HTML (HTML5 in this case) -->
 <html lang="en">
 <head>
+    <!-- Character encoding: ensures the browser correctly renders text content -->
     <meta charset="UTF-8">
+    <!-- Viewport settings for responsive design on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title shown in the browser tab -->
     <title>Alex Tian</title>
 
+    <!-- SEO meta tags to improve search engine indexing -->
     <meta name="description" content="Welcome to Alex Tian's personal website showcasing machine learning projects, AI research, and embedded systems development.">
     <meta name="keywords" content="Alex(Yunfei) Tian, Data Scientist, Machine Learning, Robotics, Embedded Systems, Research, Projects">
     <meta name="author" content="Alex Tian">
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts preconnection (optimization for faster load) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importing two custom fonts from Google Fonts: Montserrat and Playwrite DK Loopet -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DK+Loopet:wght@300&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
+    <!-- Favicon for browser tab -->
     <link rel="icon" type="image/x-icon" href="static/icons/favicon-64.ico">
+    <!-- External CSS files for global styles and home page styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
 </head>
-<body>
 
-<!-- Navigation Bar -->
+
+<body>
+<!-- ====== Navigation Bar ====== -->
 <nav class="navbar">
     <div class="navbar-container">
+        <!-- Branding element (site owner’s name/logo) -->
         <div class="navbar-brand">Alex Tian</div>
+        <!-- Navigation links (active class highlights current page) -->
         <ul class="navbar-links">
             <li><a href="home.html" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -34,29 +44,40 @@
     </div>
 </nav>
 
-<!-- Home Section -->
+<!-- ====== Home Section ====== -->
 <section id="home">
     <div class="home-container">
+        <!-- Profile image on the left side with animation -->
         <div class="home-image animate-left">
+            <!-- Image with alt text for accessibility -->
             <img src="static/images/my-photo.webp" alt="Alex(Yunfei) Tian">
         </div>
 
+        <!-- Intro content on the right side with animation -->
         <div class="home-content animate-right">
             <div class="home-text">
+                <!-- Main greeting with name emphasis using a span -->
                 <h1 class="name-section">Hi, I'm <span class="name">Alex Tian</span></h1>
+                <!-- Subtitle describing current role(s) -->
                 <h2 class="subtitle">MASc | Data Scientist | Machine Learning Researcher</h2>
+                <!-- Short self-introduction -->
                 <p class="self-intro">
-                    An international student passionate about transforming data into intelligent solutions, with research interests in robotics and embedded systems.
+                    An international student passionate about transforming data into intelligent solutions, 
+                    with research interests in robotics and embedded systems.
                 </p>
             </div>
 
+            <!-- Social media icons with external links -->
             <div class="social-icons">
+                <!-- LinkedIn profile -->
                 <a href="https://linkedin.com/in/yunfei-alex-tian-2b9317195" target="_blank">
                     <img src="static/icons/linkedin-logo.png" alt="LinkedIn">
                 </a>
+                <!-- GitHub profile -->
                 <a href="https://github.com/alextianyf" target="_blank">
                     <img src="static/icons/github-logo.png" alt="GitHub">
                 </a>
+                <!-- Email/contact page -->
                 <a href="contact.html">
                     <img src="static/icons/email-logo.png" alt="Email">
                 </a>

@@ -17,9 +17,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
 </head>
-<body>
 
-<!-- Navigation Bar -->
+
+<body>
+<!-- ===== Navigation Bar ===== -->
 <nav class="navbar">
     <div class="navbar-container">
         <div class="navbar-brand">Alex Tian</div>
@@ -32,25 +33,33 @@
     </div>
 </nav>
 
-<!-- Contact Section -->
+<!-- ===== Contact Section ===== -->
 <section id="contact" class="contact-section">
     <div class="contact-container">
+        <!-- Section header -->
         <h2 class="section-title">Contact Me</h2>
+        <!-- Contact form integrated with Netlify Forms -->
         <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <!-- Netlify form hidden input: identify this form submission -->
             <input type="hidden" name="form-name" value="contact" />
+            <!-- Anti-spam hidden field: if this is filled, it's likely a bot -->
             <p style="display:none">
                 <label>Don't fill this out if you're human: <input name="bot-field" /></label>
             </p>
 
+            <!-- Form field for user's name -->
             <div class="form-group">
                 <input type="text" name="name" placeholder="Enter your name" required>
             </div>
+            <!-- Form field for user's email -->
             <div class="form-group">
                 <input type="email" name="email" placeholder="Enter your email" required>
             </div>
+            <!-- Form field for user's message -->
             <div class="form-group">
                 <textarea name="message" placeholder="Enter your message" required></textarea>
             </div>
+            <!-- Submit button -->
             <button type="submit" class="submit-button">SEND</button>
         </form>
     </div>
