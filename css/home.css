@@ -1,34 +1,56 @@
 /* ========== Home Section ========== */
 .home-container {
+    /* Flex container for image + content layout */
     display: flex;
     align-items: center;
     justify-content: center;
+
+    /* Full viewport height minus navbar (70px) */
     height: calc(100vh - 70px);
+
+    /* Padding around content */
     padding: 40px 60px;
+
+    /* Max width for large screens, centered */
     max-width: 1500px;
     margin: 0 auto;
 }
 
 .home-image {
+    /* Take half width in flex layout */
     flex: 1;
+
+    /* Center image inside the container */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .home-image img {
+    /* Constrain image size to fit container */
     max-height: 100%;
     max-width: 90%;
     object-fit: contain;
+
+    /* Rounded corners and subtle animation */
     border-radius: 10px;
-    animation: float 5s ease-in-out infinite;
+    animation: float 5s ease-in-out infinite; /* You may define @keyframes float elsewhere */
 }
 
 .home-content {
+    /* Take the other half of flex layout */
     flex: 1;
+
+    /* Dark transparent background */
     background-color: rgba(17, 17, 17, 0.85);
+
+    /* Inner spacing */
     padding: 40px 30px;
+
+    /* Rounded edges */
     border-radius: 15px;
+
+    /* Align content vertically */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,88 +60,108 @@
 /* ========== Home Text ========== */
 .home-text .name-section {
     font-size: 42px;
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* spacing below main heading */
 }
+
 .home-text .name {
+    /* Highlighted name in special font and color */
     color: #ff004f;
     font-family: "Playwrite DK Loopet", cursive;
 }
+
 .home-text .subtitle {
     font-size: 22px;
     color: #bbbbbb;
     margin-bottom: 15px;
 }
+
 .home-text .self-intro {
     font-size: 18px;
     color: #bbbbbb;
     max-width: 600px;
     margin-bottom: 30px;
-    line-height: 1.6;
+    line-height: 1.6; /* improves readability */
 }
 
 /* ========== Social Icons ========== */
 .social-icons {
     display: flex;
-    gap: 25px;
+    gap: 25px; /* space between icons */
 }
+
 .social-icons img {
     width: 40px;
     height: 40px;
-    transition: transform 0.3s;
+    transition: transform 0.3s; /* smooth hover scaling */
 }
+
 .social-icons img:hover {
-    transform: scale(1.2);
-    box-shadow: 0 4px 12px rgba(255, 0, 79, 0.4);
+    transform: scale(1.2); /* enlarge on hover */
+    box-shadow: 0 4px 12px rgba(255, 0, 79, 0.4); /* subtle shadow */
 }
 
 /* ========== Home Responsive ========== */
+
+/* Medium screens: tablet / small laptops */
 @media (max-width: 1200px) {
     .home-container {
-        padding: 30px 40px;
+        padding: 30px 40px; /* reduce padding */
     }
 }
 
+/* Small screens: tablets and phones */
 @media (max-width: 768px) {
     .home-container {
-        flex-direction: column;
+        flex-direction: column; /* stack vertically */
         padding: 30px 20px;
         height: auto;
         max-width: 100%;
     }
+
     .home-image {
         max-height: 50vh;
-        margin-bottom: 30px;
+        margin-bottom: 30px; /* space below image */
     }
+
     .home-content {
         max-height: none;
         width: 100%;
         align-items: center;
         text-align: center;
     }
+
     .home-text .name-section {
         font-size: 32px;
     }
+
     .home-text .subtitle {
         font-size: 18px;
     }
+
     .home-text .self-intro {
         font-size: 16px;
         max-width: 90%;
     }
+
     .social-icons {
-        justify-content: center;
+        justify-content: center; /* center icons */
     }
 }
+
+/* Extra-small screens: phones */
 @media (max-width: 480px) {
     .home-text .name-section {
         font-size: 28px;
     }
+
     .home-text .subtitle {
         font-size: 16px;
     }
+
     .home-text .self-intro {
         font-size: 14px;
     }
+
     .social-icons img {
         width: 32px;
         height: 32px;
