@@ -1,53 +1,61 @@
 /* ========== Contact Page Form ========== */
+
+/* Main container section for contact page */
 .contact-section {
-    min-height: calc(100vh - 70px);
-    display: flex;
+    min-height: calc(100vh - 70px);     /* Full height minus navbar */
+    display: flex;                      /* Center content with flexbox */
     align-items: center;
     justify-content: center;
-    padding: 60px 20px;
-    background-color: #000;
+    padding: 60px 20px;                 /* Space around form */
+    background-color: #000;            /* Matches global dark theme */
 }
 
+/* Container that wraps the form */
 .contact-container {
-    background-color: rgba(17, 17, 17, 0.9);
+    background-color: rgba(17, 17, 17, 0.9);  /* Slight transparency for depth */
     padding: 40px;
-    border-radius: 15px;
+    border-radius: 15px;              /* Rounded corners for card look */
     width: 100%;
-    max-width: 600px;
+    max-width: 600px;                 /* Prevents form from being too wide */
 }
 
+/* Title styling inside the container */
 .contact-container h2.section-title {
     text-align: center;
     font-size: 32px;
     margin-bottom: 30px;
 }
 
+/* Form layout: vertical stack */
 form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 20px;                        /* Spacing between fields */
 }
 
+/* Input and textarea styling */
 .form-group input,
 .form-group textarea {
     width: 100%;
     padding: 15px;
-    background-color: #111;
-    color: #fff;
-    border: 1px solid #444;
+    background-color: #111;          /* Deep gray input background */
+    color: #fff;                     /* White text */
+    border: 1px solid #444;          /* Subtle border */
     border-radius: 8px;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    resize: none;
+    resize: none;                    /* Prevent textarea resizing */
 }
 
+/* Placeholder color for input fields */
 .form-group input::placeholder,
 .form-group textarea::placeholder {
     color: #aaa;
 }
 
+/* Submit button styling */
 .submit-button {
-    background-color: #ff004f;
+    background-color: #ff004f;       /* Bold red for call-to-action */
     color: white;
     padding: 15px;
     border: none;
@@ -58,6 +66,7 @@ form {
     transition: background-color 0.3s;
 }
 
+/* Button hover state */
 .submit-button:hover {
-    background-color: #e60045;
+    background-color: #e60045;       /* Slightly darker red on hover */
 }

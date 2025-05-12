@@ -1,21 +1,27 @@
-/* Projects Section */
+/* ========== Projects Section ========== */
+
+/* Container for all project content */
 .project-section {
-    margin-top: 100px;
+    margin-top: 100px; /* space from top (e.g., below navbar) */
 }
 
+/* Section title */
 .section-title {
     font-size: 36px;
-    color: #e63946;
+    color: #e63946;       /* Red accent color */
     text-align: center;
     margin-bottom: 40px;
 }
 
-/* Filter Buttons */
+/* ========== Filter Buttons ========== */
+
+/* Container for all filter buttons */
 .project-filter {
     text-align: center;
     margin-bottom: 50px;
 }
 
+/* Style for individual filter buttons */
 .filter-button {
     background: none;
     border: 2px solid #e63946;
@@ -28,34 +34,41 @@
     transition: all 0.3s ease;
 }
 
+/* Hover and active state: red background with white text */
 .filter-button:hover,
 .filter-button.active {
     background-color: #e63946;
     color: white;
 }
 
-/* Project Cards */
+/* ========== Project Card Layout ========== */
+
+/* Container for each project */
 .project-card {
-    background-color: #1a1a1a;
+    background-color: #1a1a1a;                      /* dark card background */
     border-radius: 15px;
-    margin: 0 auto 60px auto;
+    margin: 0 auto 60px auto;                       /* center card and add bottom spacing */
     max-width: 1100px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);       /* soft shadow */
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     padding: 30px;
 }
 
+/* Hover effect: lift and glow */
 .project-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 24px rgba(230, 57, 70, 0.4);
 }
 
+/* Flex layout for image and text */
 .project-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 40px;  /* space between image and text */
 }
+
+/* ========== Project Image ========== */
 
 .project-image {
     width: 100%;
@@ -67,8 +80,10 @@
     height: auto;
     border-radius: 12px;
     object-fit: cover;
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1); /* subtle white glow */
 }
+
+/* ========== Project Text Content ========== */
 
 .project-text {
     max-width: 600px;
@@ -76,7 +91,7 @@
 
 .project-text h3 {
     font-size: 26px;
-    color: #e63946;
+    color: #e63946;          /* project title in red */
     margin-bottom: 15px;
 }
 
@@ -86,6 +101,8 @@
     line-height: 1.8;
     margin-bottom: 20px;
 }
+
+/* ========== GitHub Button ========== */
 
 .github-button {
     display: inline-block;
@@ -98,24 +115,28 @@
     transition: background-color 0.3s ease;
 }
 
+/* Hover effect: darken red */
 .github-button:hover {
     background-color: #c72c3c;
 }
 
+/* Disabled button state (e.g., NDA projects) */
 .github-button.disabled {
     background-color: #666;
     cursor: not-allowed;
     pointer-events: none;
 }
 
-/* Project Tags */
+/* ========== Project Tags ========== */
+
 .project-tags {
     margin-bottom: 15px;
 }
 
+/* Tag badge styles */
 .project-tags span {
     display: inline-block;
-    background-color: rgba(230, 57, 70, 0.15);
+    background-color: rgba(230, 57, 70, 0.15); /* red tint */
     color: #e63946;
     font-size: 14px;
     padding: 6px 12px;
@@ -124,10 +145,12 @@
     margin-bottom: 8px;
 }
 
-/* Responsive Handling */
+/* ========== Responsive Handling ========== */
+
+/* For tablets and small screens */
 @media (max-width: 768px) {
     .project-content {
-        flex-direction: column;
+        flex-direction: column;        /* stack image and text vertically */
         gap: 20px;
         align-items: center;
     }

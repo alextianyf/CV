@@ -1,19 +1,21 @@
-/* About Page CSS */
+/* ========== About Page CSS ========== */
 
+/* ===== Shared Section Layout ===== */
 .section {
-    padding: 80px 20px;
+    padding: 80px 20px;              /* vertical and horizontal spacing */
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto;                  /* center the section */
 }
 
 .section-title {
     font-size: 36px;
     margin-bottom: 40px;
-    color: #e63946;
+    color: #e63946;                  /* red highlight color */
     text-align: center;
     position: relative;
 }
 
+/* Red underline below section titles */
 .section-title::after {
     content: "";
     width: 80px;
@@ -23,39 +25,43 @@
     margin: 10px auto 0;
 }
 
+/* ===== About Text Content ===== */
 .about-content p {
     font-size: 18px;
-    line-height: 1.8;
+    line-height: 1.8;                /* readable spacing */
     margin-bottom: 20px;
-    color: #bbb;
+    color: #bbb;                     /* soft gray text */
 }
 
+/* Highlighted text span */
 .highlight {
     color: inherit;
     font-weight: 600;
 }
 
-/* Skills Section */
-/* Skill Cards Layout */
+/* ========== Skills Section ========== */
+
+/* Grid layout for skill cards */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* responsive cards */
     gap: 30px;
     margin-top: 30px;
 }
 
+/* Individual skill card styling */
 .skill-card {
     background: #1a1a1a;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.05);
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.05); /* subtle inner glow */
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeIn 1s ease forwards;
 }
 
-/* 动画效果：卡片淡入 */
+/* Animation: fade + slide up */
 @keyframes fadeIn {
     to {
         opacity: 1;
@@ -63,13 +69,13 @@
     }
 }
 
-/* Hover时小悬浮 */
+/* Hover effect: lift and glow */
 .skill-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(230, 57, 70, 0.3);
 }
 
-/* Skill Card Title */
+/* Skill card heading */
 .skill-card h3 {
     font-size: 22px;
     color: #ccc;
@@ -77,12 +83,12 @@
     transition: color 0.3s ease;
 }
 
-/* Hover标题变红 */
+/* On hover, title turns red */
 .skill-card:hover h3 {
     color: #e63946;
 }
 
-/* 列表样式优化 */
+/* Custom styled list inside skill card */
 .skill-card ul {
     list-style: none;
     padding-left: 0;
@@ -90,6 +96,7 @@
     font-size: 16px;
 }
 
+/* Individual list item spacing and indent */
 .skill-card li {
     margin-bottom: 10px;
     line-height: 1.8;
@@ -97,7 +104,7 @@
     padding-left: 20px;
 }
 
-/* 自定义小红点 */
+/* Red bullet point using ::before pseudo-element */
 .skill-card li::before {
     content: '';
     width: 8px;
@@ -109,7 +116,9 @@
     top: 9px;
 }
 
-/* Awards Section */
+/* ========== Awards Section ========== */
+
+/* Grid layout for award cards */
 .awards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -117,6 +126,7 @@
     margin-top: 30px;
 }
 
+/* Individual award card */
 .award-card {
     background: #1a1a1a;
     padding: 25px;
@@ -126,16 +136,19 @@
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
+/* Hover: float + red glow */
 .award-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(230, 57, 70, 0.3);
 }
 
+/* Award icon (emoji or image) */
 .award-icon {
     font-size: 32px;
     margin-bottom: 10px;
 }
 
+/* Award title */
 .award-card h3 {
     font-size: 20px;
     color: #ccc;
@@ -143,20 +156,24 @@
     transition: color 0.3s ease;
 }
 
+/* Highlight title on hover */
 .award-card:hover h3 {
-    color: #e63946; /* hover时才变红 */
+    color: #e63946;
 }
 
+/* Award subtitle */
 .award-card p {
     font-size: 16px;
     color: #bbb;
 }
 
-/* Roadmap Section */
+/* ========== Roadmap Timeline Section ========== */
+
 .roadmap-section {
     margin-top: 80px;
 }
 
+/* Wrapper for the timeline */
 .timeline {
     position: relative;
     margin: 50px auto;
@@ -165,6 +182,7 @@
     max-width: 1000px;
 }
 
+/* Center vertical line */
 .timeline::before {
     content: '';
     position: absolute;
@@ -176,6 +194,7 @@
     background: #e63946;
 }
 
+/* Shared styles for each item */
 .timeline-item {
     position: relative;
     width: 50%;
@@ -195,19 +214,19 @@
     line-height: 1.8;
 }
 
-/* 左边项目 */
+/* Left-side items */
 .timeline-item.left {
     left: 0;
     text-align: right;
 }
 
-/* 右边项目 */
+/* Right-side items */
 .timeline-item.right {
     left: 50%;
     text-align: left;
 }
 
-/* 小圆点 */
+/* Red dot marker on each timeline item */
 .timeline-item::after {
     content: '';
     position: absolute;
@@ -220,45 +239,54 @@
     z-index: 1;
 }
 
+/* Adjust dot position for right-side items */
 .timeline-item.right::after {
     left: -8px;
     right: auto;
 }
 
-/* 响应式处理 */
+/* ========== Responsive Timeline ========== */
+
+/* Tablet & below */
 @media (max-width: 768px) {
     .timeline::before {
-        left: 20px;
+        left: 20px; /* shift vertical line left */
     }
+
     .timeline-item {
-        width: 100%;
+        width: 100%;           /* full width items */
         padding-left: 50px;
         text-align: left;
     }
+
     .timeline-item.left,
     .timeline-item.right {
-        left: 0;
+        left: 0;               /* align all items left */
     }
+
     .timeline-item::after {
-        left: 12px;
+        left: 12px;            /* align dots with line */
     }
 }
 
-/* Responsive Timeline */
+/* Small devices: refine padding and alignment */
 @media (max-width: 768px) {
     .timeline::before {
         left: 10px;
     }
+
     .timeline-item {
         width: 100%;
         padding-left: 30px;
         padding-right: 20px;
     }
+
     .timeline-item:nth-child(odd),
     .timeline-item:nth-child(even) {
         left: 0;
         text-align: left;
     }
+
     .timeline-icon {
         left: 10px;
         transform: none;
