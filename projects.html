@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="css/projects.css">
 </head>
 
-
 <body>
 <!-- ===== Navigation Bar ===== -->
 <nav class="navbar">
@@ -41,142 +40,162 @@
         <button class="filter-button" data-category="Research">Research</button>
         <button class="filter-button" data-category="Projects">Projects</button>
         <button class="filter-button" data-category="Blogs">Blogs</button>
-    </div>
-
-    <!-- ===== Project Card 1: NDA-Protected Research ===== -->
-    <div class="project-card" data-category="Research">
-        <div class="project-content">
-            <!-- Project image -->
-            <div class="project-image">
-                <img src="static/images/projects/voltage-anomaly.png" alt="Voltage Anomaly Detection">
+    </div><!-- ===== Project Card 1: NDA-Protected Research ===== -->
+<div class="project-card" data-category="Research">
+    <div class="project-content">
+        <!-- Project image -->
+        <div class="project-image">
+            <img src="static/images/projects/voltage-anomaly.png" alt="Voltage Anomaly Detection">
+        </div>
+        <div class="project-text">
+            <!-- Project title-->
+            <h3>Voltage Anomaly Detection (Schneider Electric)</h3>
+            <!-- Project description -->
+            <p>Conducted a large-scale statistical analysis of voltage behavior across 200+ corporations to define normal operating ranges. Applied feature engineering, unsupervised learning algorithms (GMM, DBSCAN, K-Means, PCA), and developed a fully automated, scalable ML pipeline using Python (OOP) for anomaly detection and voltage profiling.<br><br>
+            The solution optimized operational efficiency, reduced costs, and enabled automated technician dispatch through intelligent voltage anomaly identification.<br><br><em><strong>Note:</strong> Project details are protected under NDA and not open-sourced.</em></p>
+            <!-- Tags for filtering -->
+            <div class="project-tags">
+                <span>Research</span>
+                <span>Machine Learning</span>
             </div>
-            <div class="project-text">
-                <!-- Project title-->
-                <h3>Voltage Anomaly Detection (Schneider Electric)</h3>
-                <!-- Project description -->
-                <p>Conducted a large-scale statistical analysis of voltage behavior across 200+ corporations to define normal operating ranges. Applied feature engineering, unsupervised learning algorithms (GMM, DBSCAN, K-Means, PCA), and developed a fully automated, scalable ML pipeline using Python (OOP) for anomaly detection and voltage profiling.<br><br>
-                The solution optimized operational efficiency, reduced costs, and enabled automated technician dispatch through intelligent voltage anomaly identification.<br><br><em><strong>Note:</strong> Project details are protected under NDA and not open-sourced.</em></p>
-                <!-- Tags for filtering -->
-                <div class="project-tags">
-                    <span>Research</span>
-                    <span>Machine Learning</span>
-                </div>
-                <!-- GitHub link is disabled due to NDA -->
-                <a href="#" class="github-button disabled">Protected by NDA</a>
-            </div>
+            <!-- GitHub link is disabled due to NDA -->
+            <a href="#" class="github-button disabled">Protected by NDA</a>
         </div>
     </div>
-
-    <!-- ===== Project Card 2: NDA-Protected Research ===== -->
-    <div class="project-card" data-category="Projects">
-        <div class="project-content">
-            <!-- Project image -->
-            <div class="project-image">
-                <img src="static/images/projects/MLR.png" alt="Voltage Anomaly Detection">
+</div>
+<!-- ===== Project Card 2: Linear Regression ===== -->
+<div class="project-card" data-category="Projects">
+    <div class="project-content">
+        <!-- Project image -->
+        <div class="project-image">
+            <img src="static/images/projects/MLR.png" alt="Voltage Anomaly Detection">
+        </div>
+        <div class="project-text">
+            <!-- Project title-->
+            <h3>Linear Regression Case Study</h3>
+            <!-- Project description -->
+            <p>
+            A hands-on case study exploring Simple and Multiple Linear Regression to predict product sales based on advertising budgets across TV, Radio, and Newspaper.
+            Key contributions include manual implementation of OLS and Gradient Descent, hypothesis testing, confidence interval analysis, and interaction effect modeling—emphasizing both theoretical foundations and statistical interpretability using Python.
+            </p>
+            <!-- Tags for filtering -->
+            <div class="project-tags">
+                <span>Machine Learning</span>
+                <span>Linear Regression</span>
             </div>
-            <div class="project-text">
-                <!-- Project title-->
-                <h3>Linear Regression Case Study</h3>
-                <!-- Project description -->
-                <p>
-                A hands-on case study exploring Simple and Multiple Linear Regression to predict product sales based on advertising budgets across TV, Radio, and Newspaper.
-                Key contributions include manual implementation of OLS and Gradient Descent, hypothesis testing, confidence interval analysis, and interaction effect modeling—emphasizing both theoretical foundations and statistical interpretability using Python.
-                </p>
-                <!-- Tags for filtering -->
-                <div class="project-tags">
-                    <span>Machine Learning</span>
-                    <span>Linear Regression</span>
-                </div>
-                <!-- GitHub link is disabled due to NDA -->
-                <a href="https://github.com/alextianyf/LinearRegression-CaseStudy-Spend-Sale-Prediction/tree/main" target="_blank" class="github-button">View on GitHub</a>
-            </div>
+            <!-- GitHub link is disabled due to NDA -->
+            <a href="https://github.com/alextianyf/LinearRegression-CaseStudy-Spend-Sale-Prediction/tree/main" target="_blank" class="github-button">View on GitHub</a>
         </div>
     </div>
-
-    <!-- ===== Project Card 3: Gradient Descent Blog ===== -->
-    <div class="project-card" data-category="Blogs">
-        <div class="project-content">
-            <!-- Project image -->
-            <div class="project-image">
-                <img src="static/images/projects/gradient-descent-study.png" alt="Gradient Descent Study">
+</div>
+<!-- ===== Project Card 3: Underwater-Image-Quality-Enhancement ===== -->
+<div class="project-card" data-category="Projects">
+    <div class="project-content">
+        <!-- Project image -->
+        <div class="project-image">
+            <img src="static/images/projects/L2UWE.png" alt="L2UWE: Underwater Image Quality Enhancement">
+        </div>
+        <div class="project-text">
+            <!-- Project title-->
+            <h3>Underwater Image Enhancement (L²UWE Reimplementation)</h3>
+            <!-- Project description -->
+            <p>
+            This project reimplements the L²UWE pipeline—an efficient framework for enhancing low-light underwater images using local contrast and multi-scale fusion—originally proposed by Tunai Porto Marques and Professor Alexandra Branzan Albu at the University of Victoria. 
+            Under Professor Albu’s supervision, I reproduced this work in 2023 using Python, OpenCV, NumPy, and Matplotlib, faithfully following the methodology described in the original paper. 
+            The pipeline includes local contrast estimation, dark channel refinement, radiance recovery, and multi-scale Laplacian pyramid fusion, all designed from scratch with a strong emphasis on code clarity and educational visualization. 
+            Unlike black-box deep learning models, L²UWE is grounded in physical intuition and image formation theory, making it interpretable and efficient. The implementation is applicable to marine ecology, underwater robotics, archaeological preservation, 
+            and submerged infrastructure inspection, and it significantly deepened my understanding of image enhancement theory and underwater visual processing.
+            </p>
+            <!-- Tags for filtering -->
+            <div class="project-tags">
+                <span>Machine Learning</span>
+                <span>Computer Vision</span>
             </div>
-            <div class="project-text">
-                <!-- Project title-->
-                <h3>Gradient Descent: Insights into Behavior and Optimization Challenges</h3>
-                <!-- Project description -->
-                <p>Manually implemented and visualized gradient descent optimization paths across various cost functions to investigate convergence behaviors under different initialization strategies and learning rates. Explored phenomena like slow convergence, divergence, oscillations, and local minima through a series of four structured case studies.<br><br>
-                This project highlights practical limitations of gradient-based optimization and provides valuable insights for debugging, hyperparameter tuning, and model optimization in machine learning workflows.</p>
-                <!-- Tags for filtering -->
-                <div class="project-tags">
-                    <span>Blogs</span>
-                    <span>ML/DL Optimizing Algorithms</span>
-                </div>
-                <!-- GitHub link -->
-                <a href="https://github.com/alextianyf/Gradient-Descent-Insights-into-Behavior-and-Optimization-Challenges" target="_blank" class="github-button">View on GitHub</a>
-            </div>
+            <!-- GitHub link is disabled due to NDA -->
+            <a href="https://github.com/alextianyf/Underwater-Image-Quality-Enhancement-L2UWE/tree/main" target="_blank" class="github-button">View on GitHub</a>
         </div>
     </div>
-
-    <!-- ===== Project Card 4: Hypothesis Testing Blog ===== -->
-    <div class="project-card" data-category="Blogs">
-        <div class="project-content">
-            <!-- Project image -->
-            <div class="project-image">
-                <img src="static/images/projects/p-value.png" alt="Hypothesis testing studies">
+</div>
+<!-- ===== Project Card 3: Gradient Descent Blog ===== -->
+<div class="project-card" data-category="Blogs">
+    <div class="project-content">
+        <!-- Project image -->
+        <div class="project-image">
+            <img src="static/images/projects/gradient-descent-study.png" alt="Gradient Descent Study">
+        </div>
+        <div class="project-text">
+            <!-- Project title-->
+            <h3>Gradient Descent: Insights into Behavior and Optimization Challenges</h3>
+            <!-- Project description -->
+            <p>Manually implemented and visualized gradient descent optimization paths across various cost functions to investigate convergence behaviors under different initialization strategies and learning rates. Explored phenomena like slow convergence, divergence, oscillations, and local minima through a series of four structured case studies.<br><br>
+            This project highlights practical limitations of gradient-based optimization and provides valuable insights for debugging, hyperparameter tuning, and model optimization in machine learning workflows.</p>
+            <!-- Tags for filtering -->
+            <div class="project-tags">
+                <span>Blogs</span>
+                <span>ML/DL Optimizing Algorithms</span>
             </div>
-            <div class="project-text">
-                <!-- Project title-->
-                <h3>Hypothesis Testing Studies</h3>
-                <!-- Project description -->
-                <p>A comprehensive, step-by-step exploration of core statistical inference concepts—null vs. alternative hypotheses, p-values, significance levels, and critical values—paired with a deep dive into one-tailed vs. two-tailed tests.  
-                    Through detailed markdown notes, custom visual illustrations, and runnable Jupyter notebooks (with a simulated dataset), this project helps students, data practitioners, and interview-prep learners build strong intuition and hands-on skills in hypothesis testing.</p>
-                <!-- Tags for filtering -->
-                <div class="project-tags">
-                    <span>Blogs</span>
-                    <span>Data Science</span>
-                </div>
-                <!-- GitHub link -->
-                <a href="https://github.com/alextianyf/Hypothesis-testing-studies/tree/main" target="_blank" class="github-button">View on GitHub</a>
-            </div>
+            <!-- GitHub link -->
+            <a href="https://github.com/alextianyf/Gradient-Descent-Insights-into-Behavior-and-Optimization-Challenges" target="_blank" class="github-button">View on GitHub</a>
         </div>
     </div>
-
-    <!-- ===== Project Card 5: Confidence Interval Blog ===== -->
-    <div class="project-card" data-category="Blogs">
-        <div class="project-content">
-            <!-- Project image -->
-            <div class="project-image">
-                <img src="static/images/projects/confidence-interval.png" alt="Confidence Interval Studies">
+</div>
+<!-- ===== Project Card 5: Confidence Interval Blog ===== -->
+<div class="project-card" data-category="Blogs">
+    <div class="project-content">
+        <!-- Project image -->
+        <div class="project-image">
+            <img src="static/images/projects/confidence-interval.png" alt="Confidence Interval Studies">
+        </div>
+        <div class="project-text">
+            <!-- Project title-->
+            <h3>Confidence Interval Studies</h3>
+            <!-- Project description -->
+            <p> Designed and visualized both parametric (t-distribution) and non-parametric (bootstrap) confidence intervals to demonstrate 
+                how we estimate uncertainty in statistical analysis. This project clarifies what Confidence Interval really mean, how they’re constructed, 
+                and debunks common misinterpretations—all through hands-on simulations and intuitive visual guides.</p>
+            <!-- Tags for filtering -->
+            <div class="project-tags">
+                <span>Blogs</span>
+                <span>Data Science</span>
             </div>
-            <div class="project-text">
-                <!-- Project title-->
-                <h3>confidence Interval Studies</h3>
-                <!-- Project description -->
-                <p> Designed and visualized both parametric (t-distribution) and non-parametric (bootstrap) confidence intervals to demonstrate 
-                    how we estimate uncertainty in statistical analysis. This project clarifies what Confidence Interval really mean, how they’re constructed, 
-                    and debunks common misinterpretations—all through hands-on simulations and intuitive visual guides.</p>
-                <!-- Tags for filtering -->
-                <div class="project-tags">
-                    <span>Blogs</span>
-                    <span>Data Science</span>
-                </div>
-                <!-- GitHub link -->
-                <a href="https://github.com/alextianyf/Confidence-interval-studies" target="_blank" class="github-button">View on GitHub</a>
-            </div>
+            <!-- GitHub link -->
+            <a href="https://github.com/alextianyf/Confidence-interval-studies" target="_blank" class="github-button">View on GitHub</a>
         </div>
     </div>
-
-    <!-- ===== Placeholder Card for Future Projects ===== -->
-    <div class="project-card" data-category="ComingSoon">
-        <div class="project-content">
-            <div class="project-text">
-                <h3>Coming Soon</h3>
-                <p>New exciting project is under development. Stay tuned for updates!</p>
-                <a href="#" class="github-button disabled">Coming Soon</a>
+</div>
+<!-- ===== Project Card 4: Hypothesis Testing Blog ===== -->
+<div class="project-card" data-category="Blogs">
+    <div class="project-content">
+        <!-- Project image -->
+        <div class="project-image">
+            <img src="static/images/projects/p-value.png" alt="Hypothesis testing studies">
+        </div>
+        <div class="project-text">
+            <!-- Project title-->
+            <h3>Hypothesis Testing Studies</h3>
+            <!-- Project description -->
+            <p>A comprehensive, step-by-step exploration of core statistical inference concepts—null vs. alternative hypotheses, p-values, significance levels, and critical values—paired with a deep dive into one-tailed vs. two-tailed tests.  
+                Through detailed markdown notes, custom visual illustrations, and runnable Jupyter notebooks (with a simulated dataset), this project helps students, data practitioners, and interview-prep learners build strong intuition and hands-on skills in hypothesis testing.</p>
+            <!-- Tags for filtering -->
+            <div class="project-tags">
+                <span>Blogs</span>
+                <span>Data Science</span>
             </div>
+            <!-- GitHub link -->
+            <a href="https://github.com/alextianyf/Hypothesis-testing-studies/tree/main" target="_blank" class="github-button">View on GitHub</a>
         </div>
     </div>
-
+</div>
+<!-- ===== Placeholder Card for Future Projects ===== -->
+<div class="project-card" data-category="ComingSoon">
+    <div class="project-content">
+        <div class="project-text">
+            <h3>Coming Soon</h3>
+            <p>New exciting project is under development. Stay tuned for updates!</p>
+            <a href="#" class="github-button disabled">Coming Soon</a>
+        </div>
+    </div>
+</div>
 </section>
 
 <!-- ===== Lightweight JS Filtering Logic ===== -->
@@ -185,16 +204,13 @@
 const filterButtons = document.querySelectorAll('.filter-button');
 const projectCards = document.querySelectorAll('.project-card');
 
-// Add click event listener to each filter button
 filterButtons.forEach(button => {
     button.addEventListener('click', () => {
         const category = button.getAttribute('data-category');
         
-        // Highlight the active filter
         filterButtons.forEach(btn => btn.classList.remove('active'));
         button.classList.add('active');
 
-        // Show/hide cards based on selected category
         projectCards.forEach(card => {
             const categories = card.getAttribute('data-category').split(' ');
             if (category === 'all' || categories.includes(category)) {
